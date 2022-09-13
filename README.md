@@ -1,3 +1,4 @@
-# trybe-exercicios
-Repositório para exercícios da Trybe
-Meu repositorio de exercíciosMeu novo repositorio de exercicios trybe
+# Meu repositório de exercícios
+
+Repositório para exercícios da trybe
+
