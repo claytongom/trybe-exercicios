@@ -1,0 +1,31 @@
+h1 {
+    font-size: 65px; 
+    color: orange;
+    font-family: sans-serif;
+    font-style: italic
+} 
+
+.cor-de-fundo {
+  background-color: blueviolet;
+}
+
+p {
+  font-weight: 600;
+  font-size: 48px;
+  text-decoration: solid;
+
+}
+
+li {
+  line-height: 2;
+  text-align: center;
+  color: white;
+  background-color: black;
+
+}
+
+body {
+  font-size: 16px;
+}
+
+    
