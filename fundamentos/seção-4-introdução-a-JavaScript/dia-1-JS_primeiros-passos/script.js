@@ -113,11 +113,27 @@ if(grade < 0 || grade > 100) {
    console.log("F");
 }
 
+// exercicio if and else - é par? true or false
+
+const a = 2
+const b = 3
+const c = 5
+
+let iseven = false
+
+if ((a % 2 === 0 || b % 2 === 0 || c % 2 === 0)) {
+    iseven = true;
+};
+
+console.log(iseven);
 
 
-}
 
-}
+
+
+
+
+
 
 
 
