@@ -1,3 +1,5 @@
+// exercicios calculos aritmeticos
+
 const a = 15
 const b = 5
 
@@ -6,6 +8,8 @@ console.log("Subtração:" + (a-b));
 console.log("Multiplicação:" + (a * b));
 console.log("Divisão:" + (a / b));
 console.log("Módulo:" + (a % b));
+
+// exercicios if and else
 
 const value1 = 7
 const value2 = 10
@@ -59,6 +63,40 @@ if(anglosPositivos){
 } else {
   console.log('Erro: ângulo inválido');
 }
+
+
+// exercicio switch / case
+
+const peçaXadrez = 'cavalo';
+
+switch (peçaXadrez.toLowerCase()) {
+  case 'rei':
+    console.log('Rei-> Uma casa apenas para qualquer direção.');
+    break;
+  case 'bispo':
+    console.log('Bispo-> Diagonal.');
+    break;
+  case 'rainha':
+    console.log('Rainha-> Diagonal, horizontal e vertical.');
+    break;
+  case 'cavalo':
+    console.log('Cavalo -> "L" pode pular sobre as peças.');
+    break;
+  case 'torre':
+    console.log('Torre -> Horizontal e vertical.');
+    break;
+  case 'peão':
+    console.log("Peão -> Apenas uma casa para frente, no primeiro movimento podem ser duas casas.");
+    break;
+  default:
+    console.log('Erro, peça inválida!');
+    break;
+};
+
+
+
+
+
 
 
 
