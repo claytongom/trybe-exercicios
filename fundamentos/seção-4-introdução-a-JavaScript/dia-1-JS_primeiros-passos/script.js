@@ -127,6 +127,21 @@ if ((a % 2 === 0 || b % 2 === 0 || c % 2 === 0)) {
 
 console.log(iseven);
 
+// exercicio if and else - é impar? true or false
+
+const a = 2;
+const b = 2;
+const c = 2;
+
+let isOdd = false;
+
+if ((a % 2 !== 0 || b % 2 !== 0 || c % 2 !== 0)) {
+  isOdd = true;
+};
+console.log(isOdd);
+
+
+
 
 
 
