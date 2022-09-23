@@ -67,16 +67,27 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // exercicio 7 - menor valor contido no array e imprima-o
 
 
-let menorNumero = numbers[0];
+//let menorNumero = numbers[0];
 
-for (let index = 1; index < numbers.length; index += 1) {
-  if (numbers[index] < menorNumero) {
-    menorNumero = numbers[index];
+//for (let index = 1; index < numbers.length; index += 1) {
+ // if (numbers[index] < menorNumero) {
+   // menorNumero = numbers[index];
    
+  //}
+  
+//}
+//console.log("O menor numero é:" + menorNumero);
+
+// exercicio 8 - crie um array que vá de 1 até 25 e imprima
+
+let numeros = [];
+
+for (let index = 1; index <= 25; index += 1) {
+    numeros.push(index);
   }
   
-}
-console.log("O menor numero é:" + menorNumero);
+  console.log(numeros);
+
 
 
 
