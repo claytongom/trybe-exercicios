@@ -26,5 +26,15 @@ let media = soma / numbers.length;
 
 console.log(media);
 
+// exercicio 4 - imprima a mensagem: “valor maior que 20” e  “valor menor ou igual a 20”
+
+if(media > 20) {
+    console.log("valor maior que 20")
+} else {
+    console.log("valor menor ou igual a 20")
+}
+
+
+
 
 
