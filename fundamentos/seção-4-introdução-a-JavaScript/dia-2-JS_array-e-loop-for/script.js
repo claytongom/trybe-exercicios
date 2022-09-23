@@ -49,20 +49,34 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // exercicio 6 - valores ímpares existem no array e imprima o resultado
 
-let resultado = 0;
+//let resultado = 0;
 
-for (let index = 0; index < numbers.length; index += 1) {
-    if (numbers[index] % 2 !== 0) {
-        resultado += 1;
-      }
-}
+//for (let index = 0; index < numbers.length; index += 1) {
+    //if (numbers[index] % 2 !== 0) {
+        //resultado += 1;
+      //}
+//}
     
-if (resultado === 0) {
-   console.log('nenhum valor ímpar encontrado');
-} else {
-   console.log(resultado);
-}
+//if (resultado === 0) {
+   //console.log('nenhum valor ímpar encontrado');
+//} else {
+   //console.log(resultado);
+   
+//}
 
+// exercicio 7 - menor valor contido no array e imprima-o
+
+
+let menorNumero = numbers[0];
+
+for (let index = 1; index < numbers.length; index += 1) {
+  if (numbers[index] < menorNumero) {
+    menorNumero = numbers[index];
+   
+  }
+  
+}
+console.log("O menor numero é:" + menorNumero);
 
 
 
