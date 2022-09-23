@@ -8,8 +8,23 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // exercicio 2 - Soma todos os valores contidos no array
 
-let resultado = 0;
-for(let index = 0; index < numbers.length; index += 1) {
-    resultado += numbers[index];
+//let resultado = 0;
+//for(let index = 0; index < numbers.length; index += 1) {
+  //  resultado += numbers[index];
+//}
+//console.log(resultado);
+
+// exercicio 3 - Media do index
+
+let soma = 0;
+
+for (let index = 0; index < numbers.length; index += 1) {
+  soma += numbers[index];
 }
-console.log(resultado);
+
+let media = soma / numbers.length;
+
+console.log(media);
+
+
+
