@@ -82,11 +82,22 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 let numeros = [];
 
-for (let index = 1; index <= 25; index += 1) {
-    numeros.push(index);
+//for (let index = 1; index <= 25; index += 1) {
+    //numeros.push(index / 2);
+  //}
+  
+  //console.log(numeros);
+
+// exercicio 9 - resultados index / 2
+
+  for (let index = 1; index <= 25; index += 1) {
+    numeros.push(index / 2);
   }
   
   console.log(numeros);
+
+
+
 
 
 
