@@ -45,18 +45,32 @@
 
 // exercicio - 4 
 
-let biggestPrimeNumber = 0;
+//let biggestPrimeNumber = 0;
 
-for (let currentNumber = 2; currentNumber <= 50; currentNumber += 1) {
-  let isPrime = true;
-  for (let currentDivisor = 2; currentDivisor < currentNumber; currentDivisor += 1) {
-    if (currentNumber % currentDivisor === 0) {
-      isPrime = false;
-    }
-  }
-  if (isPrime) {
-    biggestPrimeNumber = currentNumber;
-  }
-}
+//for (let currentNumber = 2; currentNumber <= 50; currentNumber += 1) {
+  //let isPrime = true;
+  //for (let currentDivisor = 2; currentDivisor < currentNumber; currentDivisor += 1) {
+    //if (currentNumber % currentDivisor === 0) {
+      //isPrime = false;
+    //}
+  //}
+  //if (isPrime) {
+    //biggestPrimeNumber = currentNumber;
+  //}
+//}
 
-console.log(biggestPrimeNumber);
+//console.log(biggestPrimeNumber);
+
+//bonus 1 - quadrado de asteriscos
+
+let n = 5;
+let symbol = '*';
+let inputLine = '';
+
+for (let lineIndex = 0; lineIndex < n; lineIndex += 1) {
+  inputLine = inputLine + symbol;
+};
+for (let lineIndex = 0; lineIndex < n; lineIndex += 1) {
+  console.log(inputLine);
+};
+
