@@ -19,5 +19,7 @@ function createDaysOfTheWeek() {
 
 function createDaysOfTheMonth() {
   let getDaysList = document.querySelector('#days');
-    }  
-  
+   for (let index = 0; index < decemberDaysList.length; index += 1) {
+
+  }  
+}
