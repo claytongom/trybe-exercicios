@@ -24,5 +24,14 @@ function createDaysOfTheMonth() {
     let dayItem = document.createElement('li');
     dayItem.innerHTML = day;
 
+    if (day === 24 || day === 31) {
+        // Caso o dia for 24 ou 31
+      } else if (day === 4 || day === 11 || day === 18) {
+        // Caso o dia for 4, 11 ou 18
+      } else if (day === 25) {
+        // Caso o dia for 25
+      } else {
+      }
+
   }  
 }
