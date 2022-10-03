@@ -43,5 +43,5 @@ function createDaysOfTheMonth() {
 createDaysOfTheMonth();
 
 function createHolidayButton(buttonName) {
-  
+   let buttonContainer = document.querySelector('.buttons-container');
 }
