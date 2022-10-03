@@ -25,12 +25,17 @@ function createDaysOfTheMonth() {
     dayItem.innerHTML = day;
 
     if (day === 24 || day === 31) {
-        // Caso o dia for 24 ou 31
+      dayItem.className = 'day holiday'; // Atribua a classe 'day holiday' ao li criado
+      getDaysList.appendChild(dayItem); // Anexe o li criado como elemento filho do ul
       } else if (day === 4 || day === 11 || day === 18) {
-        // Caso o dia for 4, 11 ou 18
+      dayItem.className = 'day friday'; // Atribua a classe 'day friday' ao li criado
+      getDaysList.appendChild(dayItem);  
       } else if (day === 25) {
-        // Caso o dia for 25
+      dayItem.className = 'day holiday friday'; // Atribua a classe 'day holiday friday' ao li criado
+      getDaysList.appendChild(dayItem);
       } else {
+      dayItem.className = 'day';
+      getDaysList.appendChild(dayItem);
       }
 
   }  
