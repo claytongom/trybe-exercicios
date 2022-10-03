@@ -49,4 +49,6 @@ function createHolidayButton(buttonName) {
 
    newButton.innerHTML = buttonName;
    newButton.id = newButtonID;
+
+   buttonContainer.appendChild(newButton);
 }
