@@ -7,26 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     CSS only
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 
 <body>
     <header class="container text-center">
-    <h1 class="display-5"><strong>TRYBEtrip</strong></h1>
+        <h1 class="display-5"><strong>TRYBEtrip</strong></h1>
     </header>
     <br>
-      <form class="container" action="" method="get" enctype="multipart/form-data">
+    <form action="" method="get" class="container">
+      <section>
         <section class="container" id="name">
-            <label class="form-label" for="full-name">Nome:
-                <input class="form-control" type="text" name="fullName" minlength="10" maxlength="40" id="full-name">
-            </label>
+            <label class="form-label" for="full-name">Nome:</label>
+                <input class="form-control" type="text" name="fullName" minlength="10" maxlength="40" id="full-name">            
         </section>
         <br>
         <section class="container" id="email">
-            <label class="form-label" for="e-mail">Email:
-                <input class="form-control" type="email" name="email" minlength="10" maxlength="50" id="e-mail">
-            </label>
-        </section> 
+            <label class="form-label" for="e-mail">Email:</label>
+                <input type="email" name="email" minlength="10" maxlength="50" id="e-mail" class="form-control">
+            
+        </section>
+      </section>
         <br>
         <section class="container" class="destiny-list">
             <p class="lead">Destino Preferido:</p>
@@ -45,34 +47,34 @@
             <label for="saoPaulo-state">
                 <input type="radio" name="destiny" id="saoPaulo-state" value="sp">São Paulo
             </label>
-        </section>  
+        </section>
         <br>
         <p class="lead">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
-        <section clas="container" id="argument-text">
+        <section id="argument-text">
             <textarea class="form-control" name="argument" id="argument-area" cols="50" rows="10"></textarea>
         </section>
         <section class="container">
-        <label for="input-date">Data:
-            <input type="date" name="date" id="input-date">
-        </label>
+            <label for="input-date">Data:
+                <input type="date" name="date" id="input-date">
+            </label>
         </section>
-        <section class= "container class="agree-1">
-        <label for="agree-flag-1">Concordo 1
-        <input type="checkbox" name="agree1" id="agree-flag-1" value="agree1">
+        <section class="container class=" agree-1">
+            <label for="agree-flag-1">Concordo 1
+                <input type="checkbox" name="agree1" id="agree-flag-1" value="agree1">
         </section>
         </label>
         <section class="container" class="agree-2">
-        <label for="agree-flag-2">Concordo 2
-            <input type="checkbox" name="agree2" id="agree-flag-2" value="agree2">
-            </label>  
+            <label for="agree-flag-2">Concordo 2
+                <input type="checkbox" name="agree2" id="agree-flag-2" value="agree2">
+            </label>
         </section>
-     </form>
-    
+    </form>
+
     <br>
     <footer class="container">
         <button type="submit" id="submit-button">Enviar</button>
         <button type="button" id="clear-btn">Limpar</button>
-    </form>
+        </form>
     </footer>
 
     <script src="./script.js"></script>
