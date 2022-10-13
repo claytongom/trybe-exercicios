@@ -15,20 +15,20 @@
     <h1 class="display-5"><strong>TRYBEtrip</strong></h1>
     </header>
     <br>
-      <form action="" method="get" enctype="multipart/form-data">
-        <section id="name">
+      <form class="container" action="" method="get" enctype="multipart/form-data">
+        <section class="container" id="name">
             <label for="full-name">Nome:
                 <input type="text" name="fullName" minlength="10" maxlength="40" id="full-name">
             </label>
         </section>
         <br>
-        <section id="email">
+        <section class="container" id="email">
             <label for="e-mail">Email:
                 <input type="email" name="email" minlength="10" maxlength="50" id="e-mail">
             </label>
         </section> 
         <br>
-        <section class="destiny-list">
+        <section class="container" class="destiny-list">
             <p>Destino Preferido:</p>
             <label for="bahia-state">
                 <input type="radio" name="destiny" id="bahia-state" value="ba">Bahia
@@ -48,24 +48,28 @@
         </section>  
         <br>
         <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
-        <section id="argument-text">
+        <section clas="container" id="argument-text">
             <textarea name="argument" id="argument-area" cols="50" rows="10"></textarea>
         </section>
+        <section class="container">
         <label for="input-date">Data:
             <input type="date" name="date" id="input-date">
         </label>
-        <section class="agree-1">
+        </section>
+        <section class= "container class="agree-1">
         <label for="agree-flag-1">Concordo 1
         <input type="checkbox" name="agree1" id="agree-flag-1" value="agree1">
+        </section>
         </label>
-        <section class="agree-2">
+        <section class="container" class="agree-2">
         <label for="agree-flag-2">Concordo 2
             <input type="checkbox" name="agree2" id="agree-flag-2" value="agree2">
             </label>  
-        </section>   
+        </section>
+     </form>
     
     <br>
-    <footer>
+    <footer class="container">
         <button type="submit" id="submit-button">Enviar</button>
         <button type="button" id="clear-btn">Limpar</button>
     </form>
