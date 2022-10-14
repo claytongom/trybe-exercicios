@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    CSS only
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="container text-center">
+        <h1 class="display-5"><strong>TRYBEtrip</strong></h1>
+    </header>
+    <br>
+    <form action="" method="get" class="container">
+      <section>
+        <section class="container" id="name">
+            <label class="form-label" for="full-name">Nome:</label>
+                <input class="form-control" type="text" name="fullName" minlength="10" maxlength="40" id="full-name">            
+        </section>
+        <br>
+        <section class="container" id="email">
+            <label class="form-label" for="e-mail">Email:</label>
+                <input type="email" name="email" minlength="10" maxlength="50" id="e-mail" class="form-control">
+            
+        </section>
+      </section>
+        <br>
+        <p class="lead">Destino Preferido:</p>
+        <section class="container" class="destiny-list">
+            <label class="form-check-label" for="bahia-state">
+                <input class="form-check-input" type="radio" name="destiny" id="bahia-state" value="ba">Bahia 
+            </label>
+
+            <label class="form-check-label" for="alagoas-state">
+                <input class="form-check-input" type="radio" name="destiny" id="alagoas-state" value="al">Alagoas 
+            </label>
+
+            <label class="form-check-label" for="ceara-state">
+                <input class="form-check-input" type="radio" name="destiny" id="ceara-state" value="ce">Ceará 
+            </label>
+
+            <label class="form-check-label" for="saoPaulo-state">
+                <input class="form-check-input" type="radio" name="destiny" id="saoPaulo-state" value="sp">São Paulo 
+            </label>
+        </section>
+        <br>
+        <p class="lead">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+        <section id="argument-text">
+            <textarea class="form-control" name="argument" id="argument-area" cols="50" rows="10"></textarea>
+        </section>
+        <br>
+        <section class="container">
+            <p class="lead">Data:</p>
+            <label for="input-date">
+                <input class="form-control" type="date" name="date" id="input-date">
+            </label>
+        </section>
+        <section class="container mb-1 mt-2" class=" agree-1">
+            <label class="form-check-label" for="agree-flag-1">Concordo 1
+                <input class="form-check-input" type="checkbox" name="agree1" id="agree-flag-1" value="agree1">
+        </section>
+        </label>
+        <section class="container mb-1" class="agree-2">
+            <label class="form-check-label" for="agree-flag-2">Concordo 2
+                <input class="form-check-input" type="checkbox" name="agree2" id="agree-flag-2" value="agree2">
+            </label>
+        </section>
+    </form>
+
+    <br>
+    <footer class="container">
+        <button class="btn btn-secondary" type="submit" id="submit-button">Enviar</button>
+        <button class="btn btn-primary" type="button" id="clear-btn">Limpar</button>
+        </form>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
