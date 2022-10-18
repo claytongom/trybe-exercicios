@@ -1,0 +1,2 @@
+Esse é um projeto para o conteúdo de CSS Flexbox.
+somente leitura para execução somente no git
