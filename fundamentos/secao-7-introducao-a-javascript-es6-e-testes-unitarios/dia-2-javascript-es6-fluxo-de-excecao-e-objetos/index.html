@@ -27,6 +27,10 @@
     function verifyIsNumber(value1, value2) {
       }
       function sum() {
+        if (!value1 || !value2) {
+          throw new Error('Preencha os campos para realizar a soma');
+        }
+
         if (!value1 || !value2) { // A condição do if só será satisfeita se ao menos um dos campos não tenha sido preenchido
           throw new Error('Preencha os campos para realizar a soma'); // Lançando erro descritivo
       }
