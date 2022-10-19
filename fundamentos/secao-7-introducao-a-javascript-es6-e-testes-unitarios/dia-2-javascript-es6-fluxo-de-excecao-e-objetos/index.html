@@ -33,6 +33,7 @@
           const result = Number(value1) + Number(value2);
           document.getElementById('result').innerHTML = `Resultado: ${result}`; // Adiciona a mensagem com o resultado da operação no elemento que contém o id result
         } catch (error) {
+          document.getElementById('result').innerHTML = `Erro: ${error.message}`; // Adiciona a mensagem de erro ao elemento que contém o id result
         }
       }
       window.onload = () => {
