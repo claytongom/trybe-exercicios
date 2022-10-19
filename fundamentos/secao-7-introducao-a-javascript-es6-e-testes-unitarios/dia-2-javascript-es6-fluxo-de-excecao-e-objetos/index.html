@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang='pt-BR'>
+
 <head>
-  <meta charset='UTF-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>Calculadora</title>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Calculadora</title>
 </head>
+
 <body>
-  <p>Informe dois números para realizar a soma:</p>
-  <label for='value1'>Valor 1:</label>
-  <input type='text' id='value1'>
-  <label for='value2'>Valor 2:</label>
-  <input type='text' id='value2'>
-  <button id='button'>Somar</button>
-  <p id='result'></p>
-  <script>
-    function sum() {
-      const value1 = document.getElementById('value1').value;
-      const value2 = document.getElementById('value2').value;
-      const result = Number(value1) + Number(value2);
-      document.getElementById('result').innerHTML = `Resultado: ${result}`;
-      document.getElementById('value1').value = '';
-      document.getElementById('value2').value = '';
-    }
+    <p>Informe dois números para realizar a soma:</p>
+    <label for='value1'>Valor 1:</label>
+    <input type='text' id='value1'>
+    <label for='value2'>Valor 2:</label>
+    <input type='text' id='value2'>
+    <button id='button'>Somar</button>
+    <p id='result'></p>
+    <script>
+        function sum() {
+            const value1 = document.getElementById('value1').value;
+            const value2 = document.getElementById('value2').value;
+            const result = Number(value1) + Number(value2);
+            document.getElementById('result').innerHTML = `Resultado: ${result}`;
+            document.getElementById('value1').value = '';
+            document.getElementById('value2').value = '';
+        }
 
-    function verifyIsNumber(value1, value2) {
-      }
-      function sum() {
-        if (!value1 || !value2) { // A condição do if só será satisfeita se ao menos um dos campos não tenha sido preenchido
-          throw new Error('Preencha os campos para realizar a soma'); // Lançando erro descritivo
-      }
-    }
+        function verifyIsNumber(value1, value2) {
+        }
+        function sum() {
+            if (!value1 || !value2) { // A condição do if só será satisfeita se ao menos um dos campos não tenha sido preenchido
+                throw new Error('Preencha os campos para realizar a soma'); // Lançando erro descritivo
+            }
+        }
         if (isNaN(value1) || isNaN(value2)) {
-          throw new Error('Informe dois números para realizar a soma');
-    }
-    function sum() {
-        // ...
-      }
+            throw new Error('Informe dois números para realizar a soma');
+        }
+        function sum() {
+            try { // Adicione o bloco try para caso ocorra algum erro durante a soma dos valores sejá possível recuperar e tratar o erro no bloco catch
 
-    window.onload = () => {
-      const button = document.getElementById('button');
-      button.addEventListener('click', sum);
-    }
-  </script>
+            } catch (error) {
+            }
+        }
+        window.onload = () => {
+            const button = document.getElementById('button');
+            button.addEventListener('click', sum);
+        }
+    </script>
 </body>
+
 </html>
