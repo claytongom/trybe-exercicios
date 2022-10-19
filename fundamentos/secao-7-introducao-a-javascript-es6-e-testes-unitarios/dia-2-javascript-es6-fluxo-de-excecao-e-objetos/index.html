@@ -34,8 +34,12 @@
           document.getElementById('result').innerHTML = `Resultado: ${result}`; // Adiciona a mensagem com o resultado da operação no elemento que contém o id result
         } catch (error) {
           document.getElementById('result').innerHTML = `Erro: ${error.message}`; // Adiciona a mensagem de erro ao elemento que contém o id result
+        } finally {
+          document.getElementById('value1').value = ''; // Apagar os valores do elemento que possui o id value1
+          document.getElementById('value2').value = ''; // Apagar os valores do elemento que possui o id value2
         }
       }
+      
       window.onload = () => {
         const button = document.getElementById('button');
         button.addEventListener('click', sum);
