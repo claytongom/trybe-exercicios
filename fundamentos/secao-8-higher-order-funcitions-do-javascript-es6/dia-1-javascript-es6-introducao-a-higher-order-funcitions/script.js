@@ -1,3 +1,4 @@
+// exericio 1
 const newEmployees = () => {
     const employees = {
       id1: '', // Nome: Pedro Guerra -> Chame sua função passando o nome Pedro Guerra como parâmetro, substituindo as aspas
