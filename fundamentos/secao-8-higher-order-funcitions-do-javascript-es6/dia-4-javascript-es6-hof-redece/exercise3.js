@@ -11,5 +11,6 @@ function containsA() {
     let totalOfLettersA = 0;
     names.forEach((name) => {
         const lettersFromName = name.split('');
+        totalOfLettersA += lettersFromName.reduce((lettersAInName, currentLetter) => { }, 0);
     });
 }
