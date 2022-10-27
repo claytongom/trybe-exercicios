@@ -18,6 +18,9 @@
 //   console.log(newEmployees(employeeGenerator));
 
 const numberChecker = (myNumber, number) => myNumber === number;
+const lotteryResult = () => {
+  const number = Math.floor((Math.random() * 5) + 1);
+};
 
 
 
