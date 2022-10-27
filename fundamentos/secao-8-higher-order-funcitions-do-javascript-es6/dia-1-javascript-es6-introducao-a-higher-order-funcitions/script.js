@@ -37,6 +37,13 @@ const compareAnswers = (rightAnswer, studentAnswer) => {
   return -0.5;
 };
 
+const countPoints = (rightAnswers, studentAnswers, action) => {
+  let counter = 0;
+  for (let index = 0; index < rightAnswers.length; index += 1) {
+  }
+};
+console.log(countPoints(RIGHT_ANSWERS, STUDENT_ANSWERS, compareAnswers));
+
   
 
 
