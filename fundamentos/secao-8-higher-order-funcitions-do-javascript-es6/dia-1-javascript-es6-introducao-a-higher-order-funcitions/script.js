@@ -40,12 +40,14 @@ const compareAnswers = (rightAnswer, studentAnswer) => {
 const countPoints = (rightAnswers, studentAnswers, action) => {
   let counter = 0;
   for (let index = 0; index < rightAnswers.length; index += 1) {
+    const actionReturn = action(rightAnswers[index], studentAnswers[index]);
+    counter += actionReturn;
   }
+  return `Resultado final: ${counter} pontos`;
 };
 console.log(countPoints(RIGHT_ANSWERS, STUDENT_ANSWERS, compareAnswers));
 
-  
 
 
 
-  
+
