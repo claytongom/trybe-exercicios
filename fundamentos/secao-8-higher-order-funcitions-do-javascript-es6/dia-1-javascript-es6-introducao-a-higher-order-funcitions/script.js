@@ -17,13 +17,25 @@
 //   }
 //   console.log(newEmployees(employeeGenerator));
 
-const numberChecker = (myNumber, number) => myNumber === number;
-const lotteryResult = (myNumber, callback) => {
-  const number = Math.floor((Math.random() * 5) + 1);
-    return callback(myNumber, number)? 'Lucky day, you won!' : 'Try Again!';
-};
+// const numberChecker = (myNumber, number) => myNumber === number;
+// const lotteryResult = (myNumber, callback) => {
+//   const number = Math.floor((Math.random() * 5) + 1);
+//     return callback(myNumber, number)? 'Lucky day, you won!' : 'Try Again!';
+// };
 
-console.log(lotteryResult(2, numberChecker));
+// console.log(lotteryResult(2, numberChecker));
+
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+const compareAnswers = (rightAnswer, studentAnswer) => {
+  if (rightAnswer === studentAnswer) {
+    return 1;
+  } if (studentAnswer === 'N.A') {
+    return 0;
+  }
+  return -0.5;
+};
 
   
 
