@@ -17,4 +17,5 @@ function containsA() {
         return lettersAInName;
       }, 0);
     });
+    return totalOfLettersA;
   }
