@@ -12,10 +12,13 @@ const newEmployees = () => {
   };
 
   const employeeGenerator = (fullName) => {
-    const email = fullName.toLowerCase();
-    return email;
+    const email = fullName.toLowerCase().split(' ').join('_');
+    return {fullName, email: `${email}@betrybe.com`};
   }
-  console.log(newEmployees(employeeGenerator));  
+  console.log(newEmployees(employeeGenerator));
+
+
+  
 
 
 
