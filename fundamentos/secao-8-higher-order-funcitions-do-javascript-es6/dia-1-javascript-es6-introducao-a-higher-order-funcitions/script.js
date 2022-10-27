@@ -11,7 +11,11 @@ const newEmployees = () => {
     return employees;
   };
 
-  
+  const employeeGenerator = (fullName) => {
+    const email = fullName.toLowerCase();
+    return email;
+  }
+  console.log(newEmployees(employeeGenerator));  
 
 
 
