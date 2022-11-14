@@ -1,15 +1,19 @@
 const searchButton = document.querySelector(".search-btn");
 
+const coinInput = document.querySelector("#coin-input")
+
 function fetchAPI(coin){
     const url = `https://api.exchangerate.host/lates?base=${coin}`;
     return fetch(url)
     .then((response) => response.json())
-    .then((data) => console.log(data))
+    .then((data) => data.rates)
 
 }
 
 function handleSearch(){
-    console.log("clicou");
+    const coin = coinInput.value;
+    fetchAPI(coin)
+    .then(console.log)
 }
 
-searchButton.addEventListener('click', () => fetchAPI('USD'));
+searchButton.addEventListener('click', handleSearch);
