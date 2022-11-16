@@ -1,0 +1,39 @@
+body {
+    background: #E5E5E5;
+}
+
+h1 {
+    position: absolute;
+    width: 517px;
+    height: 74px;
+    left: 306px;
+    top: 63px;
+    font-family: 'Fira Code';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 79px;
+margin-top: 60px;
+
+color: #ffffff;
+}
+
+.coinsBox {
+position: absolute;
+width: 900px;
+height: 583px;
+left: 306px;
+top: 290px;
+
+background: rgba(255, 255, 255, 0.06);
+border-radius: 20px;
+
+}
+
+.search-btn {
+    background-color: rgb(243, 220, 87);
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 30%;
+    }
