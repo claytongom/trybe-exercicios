@@ -1,5 +1,6 @@
 // Vamos importar nossa biblioteca
 import validator from 'validator';
+import './style.css';
 
 // Aqui, vamos selecionar, pelos ids, os campos em nossa página
 const campoDeTexto = document.querySelector('#value');
